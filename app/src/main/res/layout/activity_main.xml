@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- jailson titulo Aluno -->
+
+    ///////////////
+
+        <!-- jailson Campo nome -->
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome :"/>
+
+
+    <!-- jailson Campo email -->
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="Email"/>
+
+
+    <!--jailson Campo Idade -->
+    <EditText
+        android:id="@+id/edIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idade :"
+        android:inputType="number"/>
+
+
+    <!--jailson Campo Diciplina-->
+    <EditText
+        android:id="@+id/edDiciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Diciplina :"/>
+
+    <!--jailson Campo nota 1° bimestral-->
+    <EditText
+        android:id="@+id/edNota1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 1° Bimestral :"
+        android:inputType="numberDecimal"/>
+
+    <!-- jailson Compa nota 2° Bimestral Nona2 -->
+    <EditText
+      android:id="@+id/edNota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 2° Bimestral :"
+        android:inputType="numberDecimal"/>
+
+
+
+     <!--jailson Botão enviar -->
+
+    <Button
+        android:id="@+id/ButtonEviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Enviar"/>
+
+    <!--jailson Limpar -->
+    <Button
+        android:id="@+id/ButonLimpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Limpar"/>
+
+    <!--jailson TextView para exibir menasgens de erro -->
+    <TextView
+        android:id="@+id/edMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/design_default_color_error"
+        android:text="O Email está encoreto!"
+        android:visibility="gone"/>
+
+
+    <!-- TextView para exibir mesangens de resumo-->
+    <TextView
+        android:id="@+id/edResumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dados do aluno :"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
